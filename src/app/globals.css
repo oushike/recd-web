@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/*
+ * Theme tokens: the single place to drop in the rec'd brand palette and fonts.
+ * Every token here becomes a Tailwind utility, e.g. --color-ink -> text-ink, bg-ink.
+ * TODO(brand): replace placeholder colors with the real rec'd palette.
+ */
+@theme {
+  /* Core neutrals */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-ink: #000000;
+  --color-muted: #6b6b6b;
+
+  /* Brand accents: placeholders until the palette is final */
+  --color-brand-primary: #000000;
+  --color-brand-secondary: #000000;
+  --color-brand-accent: #000000;
+}
+
+@theme inline {
+  /* Fonts are loaded with next/font in src/app/layout.tsx, which sets these variables.
+   * TODO(brand): swap Inter for the brand fonts and add --font-display if needed. */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
