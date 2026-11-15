@@ -7,4 +7,5 @@ export const siteConfig = {
   description: "record. recommend. rec'd.",
   url: "https://recd.us",
   locale: "en_US",
+  supportEmail: "support@recd.us",
 } as const;
